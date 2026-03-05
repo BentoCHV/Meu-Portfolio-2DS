@@ -4,7 +4,7 @@
 }
 body {
     height: 100vh;
-    background: radial-gradient(circle, #a4a4a4, #444444);
+    background: radial-gradient(circle, #8a8a8a, #333333);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -53,21 +53,21 @@ body {
 }
 
     .meu-botao {
-        background: rgba(53, 53, 53, 0.65);
-        backdrop-filter: blur(5px);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        -webkit-backdrop-filter: blur(5px);
-        border: 1px solid rgba(53, 53, 53, 0.3);;
-        color: white;
-        border: 2px solid rgb(111, 111, 111);
-        padding: 15px 40px;
-        border-radius: 15px;
-        text-decoration: none;
-        display: inline-block;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold;
-        cursor: pointer;
-        transition: all 0.3 ease;
+    background: rgba(53, 53, 53, 0.65);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(53, 53, 53, 0.3);;
+    color: white;
+    border: 2px solid rgb(111, 111, 111);
+    padding: 15px 40px;
+    border-radius: 15px;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3 ease;
 }
 
 .meu-botao:hover {
@@ -120,6 +120,7 @@ body {
     left: 65px;
     color: white;
     text-decoration: none;
+    cursor: default;
 }
 
 .logo {
@@ -140,9 +141,21 @@ body {
     font-weight: 600;
     position: absolute;
     top: 85px;
-    left: 45px;
+    left: 25px;
     height: auto;
-    color: rgb(115, 115, 115);
+    color: rgb(137, 137, 137);
+    text-decoration: none;
+}
+
+.ctbr {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    position: absolute;
+    top: 140px;
+    left: 25px;
+    height: auto;
+    color: rgb(137, 137, 137);
     text-decoration: none;
 }
 
@@ -151,8 +164,20 @@ body {
     font-size: 15px;
     font-weight: 600;
     position: absolute;
-    top: 30px;
-    left: -10px;
+    top: 110px;
+    left: 25px;
+    height: auto;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.colorido2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    position: absolute;
+    top: 160px;
+    left: 25px;
     height: auto;
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -166,3 +191,35 @@ body {
         -1px -1px 0 #000000,
         -1px -1px 0 #000000;
 }   
+
+.conteudo {
+    height: 300px;
+    flex-direction: column;
+    margin: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.apresentacao-conteudo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    width: 615px;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    gap: 48px;
+    order: 2;
+}
+
+.apresentacao-conteudo-paragrafo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
