@@ -5,7 +5,7 @@
 
 body {
     height: 100vh;
-    background: linear-gradient(rgb(29, 29, 29), rgb(67, 67, 67));
+    background: rgb(28, 28, 28);
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -14,7 +14,7 @@ body {
 }
 
 .cabecalho {
-    padding: 2% 0% 0% 30%;
+    padding: 2% 0% 0% 15%;
 }
 
 .cabecalho-menu {
@@ -28,6 +28,11 @@ body {
     font-weight: 600;
     color: white;
     text-decoration: none;
+}
+
+.cabecalho-menu-links:hover {
+    color: #a9a9a9;
+    transform: scale(1.05);
 }
 
 .conteudo {
@@ -48,7 +53,7 @@ body {
     text-align: center;
     height: auto;
     gap: 40px;
-    order:2;  
+    order:2;
 }
 
 .apresentacao-conteudo-titulo {
@@ -57,14 +62,18 @@ body {
     text-align: justify;
 }
 
+.colorido {
+    color: #ff5500;
+}
+
 .apresentacao-conteudo-paragrafo {
     font-size: 24px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: justify;
 }
 
-.botao1 {
-    background-color: #000;
+.botao1{
+    background-color: #000000;
     color: #f55000;
     width: 500px;
     height: 80px;
@@ -77,10 +86,33 @@ body {
     font-size: 36px;
     padding: 15px 0;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 2px;
-    transform: uppercase;
+    text-transform: uppercase;
     position: relative;
     overflow: hidden;
+}
 
+.botao1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100% ;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, #ff5500);
+    transition: 0.5s;
+}
+
+.botao1:hover::before {
+    left: 100%;
+}
+
+.botao1 i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    
 }
